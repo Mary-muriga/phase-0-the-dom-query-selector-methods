@@ -8,5 +8,44 @@
   </head>
   <body>
     <!--Copy the lesson's example code here-->
+    <div>
+      <ul class="ranked-list">
+        <li>1</li>
+        <li>
+          <div>
+            <ul>
+              <li>2</li>
+            </ul>
+          </div>
+        </li>
+        <li>3</li>
+      </ul>
+    </div>
+  
+    <div>
+      <ul class="unranked-list">
+        <li>6</li>
+        <li>2</li>
+        <li>
+          <div>4</div>
+        </li>
+      </ul>
+    </div>
+    const li2 = document.querySelector("ul.ranked-list li ul li");
+li2;
+const div4 = document.querySelector("ul.unranked-list li div");
+div4;
+<main id="app">
+  <ul class="ranked-list">
+    <li>1</li>
+    <li>2</li>
+  </ul>
+
+  <ul class="ranked-list">
+    <li>10</li>
+    <li>11</li>
+  </ul>
+</main>
+document.getElementById("app").querySelectorAll("ul.ranked-list li");
   </body>
 </html>
